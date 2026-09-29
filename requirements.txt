@@ -1,0 +1,2 @@
+# This project uses R rather than Python.
+# See README.md for the R workflow.
