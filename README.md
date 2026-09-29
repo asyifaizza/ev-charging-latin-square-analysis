@@ -2,22 +2,15 @@
 
 Statistical analysis of electric vehicle charging sessions using **Latin Square Design (LSD)**, with comparisons against Completely Randomized Design (CRD) and Randomized Complete Block Designs (RCBD).
 
-## Overview
+## About the Project
 
-This project applies experimental-design methodology to observational EV charging data to study whether charging-power level is associated with energy consumption.
+This project was developed as a **group assignment for the Design and Analysis of Experiments (DAE)** course at BINUS University.
 
-The analysis uses:
-
-- Charging power as the treatment factor
-- Time of day as one blocking factor
-- Charging-station location type as another blocking factor
-- Energy consumption as the response variable
-
-The project compares several design strategies before applying a 4×4 Latin Square Design.
+The analysis applies experimental-design methodology to observational EV charging data to study the relationship between charging-power level and energy consumption, while incorporating time and charging-station location as blocking factors.
 
 ## Research Question
 
-How does charging-power level relate to energy consumption when time block and charging-station location are incorporated into the design?
+How does charging-power level relate to energy consumption when time block and charging-station location are incorporated into the analysis?
 
 ## Methodology
 
@@ -33,15 +26,14 @@ The analysis follows these main stages:
    - High
    - Ultra
 6. Construction of a 4×4 Latin Square
-7. Comparison of CRD, RCBD, and Latin Square Design
+7. Comparison of:
+   - Completely Randomized Design (CRD)
+   - Randomized Complete Block Design (RCBD)
+   - Latin Square Design (LSD)
 8. ANOVA
-9. Assumption checks
+9. Assumption testing
 10. Post-hoc analysis using Tukey HSD and Fisher LSD
 11. Visualization of energy consumption across treatment levels
-
-## Important Interpretation Note
-
-The original dataset consists of observational EV charging records. The Latin Square Design is therefore used as an analytical design framework applied to the available observations; this should not be interpreted as a randomized real-world EV charging experiment.
 
 ## Key Findings
 
@@ -51,15 +43,19 @@ According to the accompanying analysis report:
 - The reported model did not find statistically significant effects for the time and location blocking factors.
 - The project compares CRD, RCBD, and Latin Square Design to examine how blocking affects the analysis.
 
-For the complete numerical output, assumptions, ANOVA tables, and post-hoc results, see `reports/final-report.pdf`.
+For the complete numerical output, ANOVA tables, assumption tests, and post-hoc results, see `reports/final-report.pdf`.
+
+## Important Interpretation Note
+
+The original dataset consists of observational EV charging records. The Latin Square Design is therefore used as an analytical design framework applied to the available observations; this should not be interpreted as a randomized real-world EV charging experiment.
 
 ## Dataset
 
-The project contains **148,136 EV charging records** in the supplied dataset.
+The supplied dataset contains **148,136 EV charging records**.
 
-The source data include charging-session information such as station/location information, timing, charging duration, and energy consumption.
+The data include charging-session information such as station/location information, timing, charging duration, and energy consumption.
 
-## Repository Structure
+## Project Structure
 
 ```text
 ev-charging-latin-square-analysis/
@@ -73,24 +69,48 @@ ev-charging-latin-square-analysis/
     └── final-report.pdf
 ```
 
-## Reproducibility
+## Team Members
 
-The main analytical report is included in `reports/final-report.pdf`.
+This project was completed as a group assignment by:
 
-The R directory contains a cleaned project entry point and documentation of the analytical workflow. Exact reported results should be read from the accompanying report because the supplied project package did not contain a standalone original R script.
+| Name | Student ID |
+|---|---|
+| Ryu Orlando Tamin | 2702215031 |
+| Hazel Zaki Adityo | 2702329576 |
+| Asyifa Izzatil Isma | 2702374756 |
+| Vanessa Santoso | 2702242171 |
+| M. Aufa Mumtaza Ibadillah | 2702340162 |
+| Amanda Sugito | 2702388433 |
 
-## Tools
+## Course Information
+
+**Course:** Design and Analysis of Experiments  
+**Institution:** BINUS University  
+**Assignment:** AOL — Group Project  
+**Group:** Group 3
+
+## Tools & Methods
 
 - R
 - Experimental Design
-- ANOVA
 - Latin Square Design
 - Completely Randomized Design
 - Randomized Complete Block Design
+- ANOVA
 - Tukey HSD
 - Fisher LSD
 - Data Visualization
 
-## Project Context
+## Reproducibility
 
-This repository is a portfolio-oriented reconstruction of an academic Design of Analysis project. Course/group/student-specific identifiers have been removed from the repository naming and presentation.
+The accompanying analysis report is available in:
+
+```text
+reports/final-report.pdf
+```
+
+The `R/analysis.R` file provides the cleaned project entry point and documents the analytical workflow.
+
+## Academic Context
+
+This repository presents the group assignment in a portfolio-oriented format while preserving the original analytical scope and findings. Course-specific and group-specific information is retained here to acknowledge the original academic context of the project.
