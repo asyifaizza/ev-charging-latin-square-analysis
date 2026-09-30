@@ -6,7 +6,7 @@ Statistical analysis of electric vehicle charging sessions using **Latin Square 
 
 This project was developed as a **group assignment for the Design and Analysis of Experiments (DAE)** course at BINUS University.
 
-The analysis applies experimental-design methodology to observational EV charging data to study the relationship between charging-power level and energy consumption, while incorporating time and charging-station location as blocking factors
+The analysis applies experimental-design methodology to observational EV charging data to study the relationship between charging-power level and energy consumption, while incorporating time and charging-station location as blocking factors.
 
 ## Research Question
 
